@@ -1,14 +1,19 @@
-export const ProjectCard = () => {
+type Props = {
+  img: string;
+  name: string;
+  link: string;
+  description: string;
+}
+export const ProjectCard = ({img, name, link, description}: Props) => {
   return (
     <div className="projects__item">
-      <img src="" alt="project-image" className="w-full h-[120px]" />
+      <img src={img} alt="project-image" className="w-full mb-4 h-[150px]" />
       <div className="projects__header">
-        <h3>Project Name</h3>
-        <a href="#">GinHub</a>
+        <h3>{name}</h3>
+        <a href="#">{link}</a>
       </div>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis,
-        provident.
+        {description}
       </p>
       <button>Read More</button>
     </div>
