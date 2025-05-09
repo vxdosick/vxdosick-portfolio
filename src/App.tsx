@@ -26,6 +26,24 @@ function App() {
       link: "https://github.com/vxdosick/Next.js-AI-Landing-Builder.git",
       description: "123",
     },
+    {
+      img: "/public/projects/5/1.png",
+      name: "Landing-Adsite-Testtask",
+      link: "https://github.com/vxdosick/Landing-Adsite-Testtask.git",
+      description: "123",
+    },
+    {
+      img: "/public/projects/6/1.png",
+      name: "Landing-RealEstate",
+      link: "https://github.com/vxdosick/HTML_CSS_JS_Landing_RealEstate.git",
+      description: "123",
+    },
+    {
+      img: "/public/projects/7/1.png",
+      name: "WinWinTravel",
+      link: "https://github.com/vxdosick/wwt-technical-task-light-vxdosick.git",
+      description: "123",
+    },
   ];
 
   return (
