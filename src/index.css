@@ -1,8 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Pixelify+Sans:wght@400..700&display=swap');
 @import "tailwindcss";
 
 body {
   font-family: "Pixelify Sans", sans-serif;
   background-color: rgb(19, 19, 19);
   color: white;
+}
+.logo {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 500;
+}
+.hero__contactphone {
+  display: none;
+}
+.skills__githidden {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .hero__contact {
+    display: none;
+  }
+  .hero__contactphone {
+    display: block;
+  }
+}
+@media (max-width: 650px) {
+  .skills__skill {
+    gap: 20px;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 550px) {
+  .hero__header {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .hero__name h2, .hero__about {
+    text-align: center;
+  }
+  .hero__contactphone ul li {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 400px) {
+  .header__nav {
+    display: none;
+  }
+  .header .logo {
+    margin: 0 auto;
+  }
+  .skills__third {
+    display: none;
+  }
+  .skills__githidden {
+    display: flex;
+  }
+  .hero__about {
+    font-size: 14px;
+  }
+  .hero__otherslinks {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .hero__otherslinks li a {
+    margin-right: auto;
+  }
 }

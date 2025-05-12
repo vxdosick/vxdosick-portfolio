@@ -3,43 +3,43 @@ import { ProjectCard } from "./components/ProjectCard";
 function App() {
   const projects = [
     {
-      img: "/public/projects/1/1.png",
+      img: "/projects/1/1.png",
       name: "React-QRCode-Scanner-and-Creator",
       link: "https://github.com/vxdosick/React-QRCode-Scanner-and-Creator.git",
       description: "123",
     },
     {
-      img: "/public/projects/2/1.png",
+      img: "/projects/2/1.png",
       name: "Tensorflow-React-AI-Color-Generator",
       link: "https://github.com/vxdosick/Tensorflow-React-AI-Color-Generator.git",
       description: "123",
     },
     {
-      img: "/public/projects/3/1.png",
+      img: "/projects/3/1.png",
       name: "React-Tic-Tac-Toe",
       link: "https://github.com/vxdosick/React-Tic-Tac-Toe.git",
       description: "123",
     },
     {
-      img: "/public/projects/4/1.png",
+      img: "/projects/4/1.png",
       name: "Next.js-AI-Landing-Builder",
       link: "https://github.com/vxdosick/Next.js-AI-Landing-Builder.git",
       description: "123",
     },
     {
-      img: "/public/projects/5/1.png",
+      img: "/projects/5/1.png",
       name: "Landing-Adsite-Testtask",
       link: "https://github.com/vxdosick/Landing-Adsite-Testtask.git",
       description: "123",
     },
     {
-      img: "/public/projects/6/1.png",
+      img: "/projects/6/1.png",
       name: "Landing-RealEstate",
       link: "https://github.com/vxdosick/HTML_CSS_JS_Landing_RealEstate.git",
       description: "123",
     },
     {
-      img: "/public/projects/7/1.png",
+      img: "/projects/7/1.png",
       name: "WinWinTravel",
       link: "https://github.com/vxdosick/wwt-technical-task-light-vxdosick.git",
       description: "123",
@@ -49,10 +49,115 @@ function App() {
   return (
     <div className="wrapper w-full h-full">
       <div className="container max-w-[1110px] mx-auto px-4">
-        <section className="skills mb-[50px]">
+        <header className="header flex items-center justify-between mb-[50px] py-3.5 border-b border-gray-600">
+          <a className="logo" href="/">
+            vxdosick
+          </a>
+          <nav className="header__nav">
+            <ul className="flex gap-5">
+              <li>
+                <a href="#hero">Hero</a>
+              </li>
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <a href="#languages">Languages</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <section
+          id="hero"
+          className="hero mb-[50px] flex items-start justify-between gap-5"
+        >
+          <div className="hero__info max-w-[600px]">
+            <div className="hero__header flex gap-6 items-center mb-5">
+              <img
+                className="rounded-full w-[200px] h-[200px] object-cover"
+                src="/icons/vxdosick2.jpg"
+                alt="personal photo"
+              />
+              <div className="hero__name">
+                <h1 className="text-4xl">Vadym Foteniuk</h1>
+                <h2 className="text-end text-2xl">Frontend Developer</h2>
+              </div>
+            </div>
+            <div className="hero__contactphone mb-5">
+              <ul className="flex gap-6">
+                <li>
+                  <a href="tel:+48883289360">+48883289360</a>
+                </li>
+                <li>
+                  <a href="mailto:vadymfoteniuk.w@gmail.com">
+                    vadymfoteniuk.w@gmail.com
+                  </a>
+                </li>
+              </ul>
+              <ul className="hero__otherslinks flex gap-6">
+                <li>
+                  <a href="https://www.linkedin.com/in/vadym-foteniuk-423a53318/">
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/vxdosick">GitHub</a>
+                </li>
+                <li>
+                  <a href="https://www.upwork.com/freelancers/~01cfd2f56cdc4a7512">
+                    UpWork
+                  </a>
+                </li>
+                <li>
+                  <a href="https://t.me/vxdosick">Telegram</a>
+                </li>
+              </ul>
+            </div>
+            <p className="hero__about">
+              I've been doing web development for 2 years, 1 of which is
+              commercial. I create minimalistic and stylish web applications. I
+              have skills of REST API integration for effective interaction with
+              backend services. I continue to learn and improve my skills. I
+              strive to grow in a team of professionals and participate in
+              projects of various sizes at the intern or junior level.
+            </p>
+          </div>
+          <div className="hero__contact mt-17">
+            <ul>
+              <li>
+                <a href="tel:+48883289360">+48883289360</a>
+              </li>
+              <li>
+                <a href="mailto:vadymfoteniuk.w@gmail.com">
+                  vadymfoteniuk.w@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/vadym-foteniuk-423a53318/">
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/vxdosick">GitHub</a>
+              </li>
+              <li>
+                <a href="https://www.upwork.com/freelancers/~01cfd2f56cdc4a7512">
+                  UpWork
+                </a>
+              </li>
+              <li>
+                <a href="https://t.me/vxdosick">Telegram</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="skills" className="skills mb-[50px]">
           <h2 className="text-2xl mb-5">Skills</h2>
           <div className="skills__skill flex gap-[150px]">
-            <ul className="flex flex-col gap-7">
+            <ul className="skills__first flex flex-col gap-7">
               <li className="flex items-center gap-2">
                 <svg
                   className="w-8 h-8"
@@ -158,7 +263,7 @@ function App() {
                 <p>TailwindCSS</p>
               </li>
             </ul>
-            <ul className="flex flex-col gap-7">
+            <ul className="skills__second flex flex-col gap-7">
               <li className="flex items-center gap-2">
                 <svg
                   className="w-8 h-8"
@@ -211,8 +316,21 @@ function App() {
                 </svg>
                 <p>Docker</p>
               </li>
+              <li className="skills__githidden flex items-center gap-2">
+                <svg
+                  className="w-8 h-8"
+                  fill="#F05032"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Git</title>
+                  <path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187" />
+                </svg>
+                <p>Git</p>
+              </li>
             </ul>
-            <ul className="flex flex-col gap-2">
+            <ul className="skills__third flex flex-col gap-2">
               <li className="flex items-center gap-2">
                 <svg
                   className="w-8 h-8"
@@ -228,9 +346,8 @@ function App() {
               </li>
             </ul>
           </div>
-          {/* <div className="skills__language"></div> */}
         </section>
-        <section className="languages mb-[50px]">
+        <section id="languages" className="languages mb-[50px]">
           <h2 className="text-2xl mb-5">Languages</h2>
           <ul className="flex flex-col gap-7">
             <li className="flex items-center gap-2">
@@ -259,7 +376,7 @@ function App() {
             </li>
           </ul>
         </section>
-        <section className="projects">
+        <section id="projects" className="projects mb-[50px]">
           <h2 className="text-2xl mb-5">Projects</h2>
           <div className="projects__grid grid grid-cols-1 gap-4 md:grid-cols-3 sm:grid-cols-2">
             {projects.map((project, index) => {
@@ -275,6 +392,15 @@ function App() {
             })}
           </div>
         </section>
+        <footer className="py-3.5 border-t border-gray-600">
+          <div className="flex flex-col items-center">
+            <a className="logo" href="/">
+              vxdosick
+            </a>
+            <p>Strength in consistency</p>
+            <p>&copy; {new Date().getFullYear()}</p>
+          </div>
+        </footer>
       </div>
     </div>
   );
