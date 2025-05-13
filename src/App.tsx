@@ -6,43 +6,44 @@ function App() {
       img: "/projects/1/1.png",
       name: "React-QRCode-Scanner-and-Creator",
       link: "https://github.com/vxdosick/React-QRCode-Scanner-and-Creator.git",
-      description: "123",
+      description:
+        "Application for creating, scanning, saving, and working with qr codes.",
     },
     {
       img: "/projects/2/1.png",
       name: "Tensorflow-React-AI-Color-Generator",
       link: "https://github.com/vxdosick/Tensorflow-React-AI-Color-Generator.git",
-      description: "123",
+      description: "AI-based matching colour generator.",
     },
     {
       img: "/projects/3/1.png",
       name: "React-Tic-Tac-Toe",
       link: "https://github.com/vxdosick/React-Tic-Tac-Toe.git",
-      description: "123",
+      description: "A game of tic-tac-toe with a friend.",
     },
     {
       img: "/projects/4/1.png",
       name: "Next.js-AI-Landing-Builder",
       link: "https://github.com/vxdosick/Next.js-AI-Landing-Builder.git",
-      description: "123",
+      description: "AI-based web page layout generator",
     },
     {
       img: "/projects/5/1.png",
       name: "Landing-Adsite-Testtask",
       link: "https://github.com/vxdosick/Landing-Adsite-Testtask.git",
-      description: "123",
+      description: "Test assignment layout of a website for the sale of cars.",
     },
     {
       img: "/projects/6/1.png",
       name: "Landing-RealEstate",
       link: "https://github.com/vxdosick/HTML_CSS_JS_Landing_RealEstate.git",
-      description: "123",
+      description: "Layout of the bouqing site",
     },
     {
       img: "/projects/7/1.png",
       name: "WinWinTravel",
       link: "https://github.com/vxdosick/wwt-technical-task-light-vxdosick.git",
-      description: "123",
+      description: "Test task - task manager.",
     },
   ];
 
@@ -82,12 +83,14 @@ function App() {
                 alt="personal photo"
               />
               <div className="hero__name">
-                <h1 className="text-4xl">Vadym Foteniuk</h1>
-                <h2 className="text-end text-2xl">Frontend Developer</h2>
+                <h1 className="hero__title text-4xl">Vadym Foteniuk</h1>
+                <h2 className="hero__subtitle text-end text-2xl">
+                  Frontend Developer
+                </h2>
               </div>
             </div>
             <div className="hero__contactphone mb-5">
-              <ul className="flex gap-6">
+              <ul className="hero__links flex gap-6">
                 <li>
                   <a href="tel:+48883289360">+48883289360</a>
                 </li>
@@ -351,30 +354,35 @@ function App() {
           <h2 className="text-2xl mb-5">Languages</h2>
           <ul className="flex flex-col gap-7">
             <li className="flex items-center gap-2">
-              <img
-                className="w-8 h-8"
-                src="/public/icons/planet.png"
-                alt="english"
-              />
+              <img className="w-8 h-8" src="/icons/planet.png" alt="english" />
               <p>English: B1 – Intermediate (working on B2)</p>
             </li>
             <li className="flex items-center gap-2">
-              <img
-                className="w-8 h-8"
-                src="/public/icons/poland.png"
-                alt="polish"
-              />
+              <img className="w-8 h-8" src="/icons/poland.png" alt="polish" />
               <p>Polish: B2 – Upper-Intermediate</p>
             </li>
             <li className="flex items-center gap-2">
               <img
                 className="w-8 h-8"
-                src="/public/icons/ukraine.png"
+                src="/icons/ukraine.png"
                 alt="ukrainian"
               />
               <p>Ukrainian: native</p>
             </li>
           </ul>
+        </section>
+        <section className="education mb-[50px]">
+          <h2 className="text-2xl mb-5">Education</h2>
+          <div className="flex items-center gap-2 mb-3">
+            <img src="/icons/aeh.png" className="w-8" alt="AEH" />
+            <a href="https://vizja.pl/en/">
+              University of Economics and Human Sciences in Warsaw
+            </a>
+          </div>
+          <div>
+            <p>Informatics Sciences (Web-development, AI and Data Science)</p>
+            <p>2022 - 2026</p>
+          </div>
         </section>
         <section id="projects" className="projects mb-[50px]">
           <h2 className="text-2xl mb-5">Projects</h2>
