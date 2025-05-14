@@ -21,18 +21,18 @@ export const ProjectCard = ({ img, name, link, description }: Props) => {
       <img
         src={img}
         alt="project-image"
-        className="w-full mb-4 h-[150px] object-cover"
+        className="w-full mb-4 h-[150px] object-cover rounded-[4px]"
       />
       <div className="projects__header">
         <h3>{name}</h3>
         <a href={link}>GitHub</a>
       </div>
-      <p>{description}</p>
-      <button onClick={openModal}>Read More</button>
+      <p className="h-[80px]">{description}</p>
+      <button className="button--general" onClick={openModal}>Read More</button>
       <ModalWindow
         isOpen={isModalOpen}
         onClose={closeModal}
-        children={description}
+        children={[img, name, link, description]}
       ></ModalWindow>
     </div>
   );

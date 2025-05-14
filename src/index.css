@@ -6,6 +6,27 @@ body {
   background-color: rgb(19, 19, 19);
   color: white;
 }
+.button--general {
+  background-color: rgb(19, 19, 19);
+  border: 1px solid white;
+  padding: 3px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.button--general:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+}
+.button--secondary {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; 
+  padding: 3px;
+}
+.button--secondary:hover {
+  transform: scale(1.10);
+}
 a:hover {
   text-decoration: underline;
 }
