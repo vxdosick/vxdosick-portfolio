@@ -5,6 +5,27 @@ body {
   font-family: "Pixelify Sans", sans-serif;
   background-color: rgb(19, 19, 19);
   color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+.title--general {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.title--text {
+  font-size: 24px;
+  font-weight: 600;
+}
+.subtitle--general {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 500;
+}
+.subtitle--text {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 110%;
 }
 .button--general {
   background-color: rgb(19, 19, 19);
@@ -27,6 +48,19 @@ body {
 .button--secondary:hover {
   transform: scale(1.10);
 }
+.button--tertiary {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; 
+  padding: 5px 15px;
+  border: 1px solid white;
+  border-radius: 50px;
+  background-color: rgb(19, 19, 19);
+}
+.button--tertiary:hover {
+  transform: scale(1.05);
+  background-color: white;
+  color: black
+}
 a:hover {
   text-decoration: underline;
 }
@@ -46,62 +80,98 @@ a:hover {
 .skills__githidden {
   display: none;
 }
+.contacts__list li {
+  transition: all 0.2s ease-in-out;
+}
+.contacts__list li:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 2px #ffffff);
+}
+.cta__download {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; 
+  padding: 5px 15px;
+  border: 1px solid white;
+  border-radius: 50px;
+  background-color: rgb(19, 19, 19);
+  text-decoration: none !important;
+  display: inline-block;
+}
+.cta__download:hover {
+  transform: scale(1.05);
+  background-color: white;
+  color: black
+}
 
-@media (max-width: 800px) {
-  .hero__contact {
+
+
+
+
+
+@media (max-width: 1110px) {
+  .skills__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 850px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects__image {
+    width: 100%;
+  }
+  .projects__image img {
+    margin: 15px auto;
+  }
+}
+@media (max-width: 700px) {
+  .testimonials__info {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  .skills__decoration {
     display: none;
   }
-  .hero__contactphone {
-    display: block;
-  }
-}
-@media (max-width: 650px) {
-  .skills__skill {
-    gap: 20px;
-    justify-content: space-between;
-  }
-}
-@media (max-width: 550px) {
-  .hero__header {
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-  }
-  .hero__name h2, .hero__about {
-    text-align: center;
-  }
-  .hero__contactphone ul li {
-    margin: 0 auto;
-  }
-}
-@media (max-width: 400px) {
   .header__nav {
     display: none;
   }
-  .header .logo {
+  .logo {
     margin: 0 auto;
   }
-  .skills__third {
-    display: none;
+  .skills__list {
+    grid-template-columns: repeat(3, 1fr);
   }
-  .skills__githidden {
-    display: flex;
+  .skill__container {
+    flex-direction: column;
   }
-  .hero__about {
-    font-size: 14px;
+}
+@media (max-width: 550px) {
+  .projects__grid {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .hero__otherslinks {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
+  .projects__image {
+    width: 100%;
   }
-  .hero__links {
-    display: flex;
-    flex-wrap: wrap;
+  .projects__image img {
+    width: 100%;
+  }
+  .skills__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills__list li {
+   justify-content: center;
+  }
+  body {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+@media (max-width: 450px) {
+  .testimonials__author > div > div {
+    flex-direction: column;
+    align-items: start;
     gap: 0px;
-  }
-  .hero__otherslinks li a {
-    margin-right: auto;
   }
   .hero__title {
     font-size: 30px;
@@ -110,3 +180,4 @@ a:hover {
     font-size: 20px;
   }
 }
+

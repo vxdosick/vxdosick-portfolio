@@ -13,7 +13,7 @@ export const ModalWindow = ({ children, isOpen, onClose }: Props) => {
           &#10005;
         </button>
         <div className="modal__body">
-          <img className="rounded-[4px] mb-5 h-[450px] w-[700px] object-cover" src={children[0]} alt="" />
+          <img className="rounded-[4px] mb-5 h-[405px] w-[720px] object-cover" src={children[0]} alt="" />
           <h2 className="text-2xl">{children[1]}</h2>
           <a href={children[2]}>GitHub</a>
           <p>{children[3]}</p>

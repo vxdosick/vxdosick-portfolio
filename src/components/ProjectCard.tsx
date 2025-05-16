@@ -17,23 +17,28 @@ export const ProjectCard = ({ img, name, link, description }: Props) => {
   };
 
   return (
-    <div className="projects__item">
-      <img
-        src={img}
-        alt="project-image"
-        className="w-full mb-4 h-[150px] object-cover rounded-[4px]"
-      />
+    <li className="projects__item">
+      <div className="projects__image">
+        <img
+          src={img}
+          alt="project-image"
+          // className="w-full mb-4 h-[150px] object-cover rounded-[4px]"
+          className="w-[360px] h-[202.5px] object-cover mb-2"
+        />
+      </div>
       <div className="projects__header">
-        <h3>{name}</h3>
-        <a href={link}>GitHub</a>
+        <h3 className="subtitle--text mb-2 h-[50px]">{name}</h3>
+        <a href={link}>&rarr; GitHub</a>
       </div>
       <p className="h-[80px]">{description}</p>
-      <button className="button--general" onClick={openModal}>Read More</button>
+      <button className="button--general" onClick={openModal}>
+        Read More
+      </button>
       <ModalWindow
         isOpen={isModalOpen}
         onClose={closeModal}
         children={[img, name, link, description]}
       ></ModalWindow>
-    </div>
+    </li>
   );
 };
