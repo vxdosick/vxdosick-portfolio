@@ -113,7 +113,16 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (max-width: 1050px) {
+  .modal__stack ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 @media (max-width: 850px) {
+  .modal__image {
+    width: 540px;
+    height: 300px;
+  }
   .projects__grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -125,6 +134,19 @@ a:hover {
   }
 }
 @media (max-width: 700px) {
+  .modal__image {
+    width: 100%;
+    height: auto;
+  }
+  .modal__hero {
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 20px;
+  }
+  .modal__stack ul {
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+  }
   .testimonials__info {
     flex-direction: column;
     align-items: start;
@@ -144,6 +166,11 @@ a:hover {
   }
   .skill__container {
     flex-direction: column;
+  }
+}
+@media (max-width: 650px) {
+  .modal__stack ul {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 550px) {
@@ -168,6 +195,10 @@ a:hover {
   }
 }
 @media (max-width: 450px) {
+  .modal__stack ul {
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+  }
   .testimonials__author > div > div {
     flex-direction: column;
     align-items: start;

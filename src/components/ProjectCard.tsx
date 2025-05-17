@@ -6,14 +6,17 @@ type Props = {
   name: string;
   link: string;
   description: string;
+  stack: string[];
 };
-export const ProjectCard = ({ img, name, link, description }: Props) => {
+export const ProjectCard = ({ img, name, link, description, stack }: Props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => {
     setIsModalOpen(true);
+    document.body.style.overflow = "hidden";
   };
   const closeModal = () => {
     setIsModalOpen(false);
+    document.body.style.overflow = "unset";
   };
 
   return (
@@ -28,7 +31,7 @@ export const ProjectCard = ({ img, name, link, description }: Props) => {
       </div>
       <div className="projects__header">
         <h3 className="subtitle--text mb-2 h-[50px]">{name}</h3>
-        <a href={link}>&rarr; GitHub</a>
+        <a href={link} target="_blank">&rarr; GitHub</a>
       </div>
       <p className="h-[80px]">{description}</p>
       <button className="button--general" onClick={openModal}>
@@ -37,7 +40,7 @@ export const ProjectCard = ({ img, name, link, description }: Props) => {
       <ModalWindow
         isOpen={isModalOpen}
         onClose={closeModal}
-        children={[img, name, link, description]}
+        children={[img, name, link, description, stack]}
       ></ModalWindow>
     </li>
   );
