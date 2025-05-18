@@ -112,19 +112,24 @@ a:hover {
   .skills__list {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-@media (max-width: 1050px) {
   .modal__stack ul {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 1000px) {
+  .modal__hero {
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 20px;
+  }
+  .modal__stack ul {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 850px) {
   .modal__image {
     width: 540px;
     height: 300px;
-  }
-  .projects__grid {
-    grid-template-columns: repeat(2, 1fr);
   }
   .projects__image {
     width: 100%;
@@ -137,11 +142,6 @@ a:hover {
   .modal__image {
     width: 100%;
     height: auto;
-  }
-  .modal__hero {
-    flex-direction: column;
-    gap: 0;
-    margin-bottom: 20px;
   }
   .modal__stack ul {
     grid-template-columns: repeat(4, 1fr);
@@ -171,6 +171,12 @@ a:hover {
 @media (max-width: 650px) {
   .modal__stack ul {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-height: 600px) {
+  .modal__content {
+    overflow-y: scroll;
+    height: 400px;
   }
 }
 @media (max-width: 550px) {
@@ -209,6 +215,16 @@ a:hover {
   }
   .hero__subtitle {
     font-size: 20px;
+  }
+}
+@media (max-height: 450px) {
+  .modal__content {
+    height: 300px;
+  }
+}
+@media (max-width: 380px) {
+  .modal__stack ul {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
