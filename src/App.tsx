@@ -9,13 +9,7 @@ function App() {
       description:
         "Application for creating, scanning, saving, and working with qr codes.",
       stack: ["React", "TypeScript", "Tailwind"],
-    },
-    {
-      img: "/projects/2/1.png",
-      name: "Tensorflow-React-AI-Color-Generator",
-      link: "https://github.com/vxdosick/Tensorflow-React-AI-Color-Generator.git",
-      description: "AI-based matching colour generator.",
-      stack: ["React", "TypeScript", "Scss", "TensoFlowJs"],
+      demo: "https://qrcode-ap9j.onrender.com"
     },
     {
       img: "/projects/3/1.png",
@@ -23,6 +17,30 @@ function App() {
       link: "https://github.com/vxdosick/React-Tic-Tac-Toe.git",
       description: "A game of tic-tac-toe with a friend.",
       stack: ["React", "JavaScript", "CSS"],
+      demo: "https://react-tic-tac-toe-ip25.onrender.com"
+    },
+    {
+      img: "/projects/7/1.png",
+      name: "React-ToDoLost-WinWinTravel-Testtask",
+      link: "https://github.com/vxdosick/wwt-technical-task-light-vxdosick.git",
+      description: "Test task - task manager.",
+      stack: ["React", "CSS", "TypeScript"],
+    },
+    {
+      img: "/projects/5/1.png",
+      name: "Landing-Adsite-Testtask",
+      link: "https://github.com/vxdosick/Landing-Adsite-Testtask.git",
+      description: "Test assignment layout of a website for the sale of cars.",
+      stack: ["HTML", "Tailwind", "JavaScript"],
+      demo: "https://vxdosick.github.io/Landing-Adsite-Testtask/"
+    },
+    {
+      img: "/projects/6/1.png",
+      name: "Landing-RealEstate",
+      link: "https://github.com/vxdosick/HTML_CSS_JS_Landing_RealEstate.git",
+      description: "Layout of the bouqing site",
+      stack: ["HTML", "CSS", "JavaScript"],
+      demo: "https://vxdosick.github.io/Landing-RealEstate/"
     },
     {
       img: "/projects/4/1.png",
@@ -32,25 +50,11 @@ function App() {
       stack: ["Next.js", "TypeScript", "Tailwind"],
     },
     {
-      img: "/projects/5/1.png",
-      name: "Landing-Adsite-Testtask",
-      link: "https://github.com/vxdosick/Landing-Adsite-Testtask.git",
-      description: "Test assignment layout of a website for the sale of cars.",
-      stack: ["HTML", "Tailwind", "JavaScript"],
-    },
-    {
-      img: "/projects/6/1.png",
-      name: "Landing-RealEstate",
-      link: "https://github.com/vxdosick/HTML_CSS_JS_Landing_RealEstate.git",
-      description: "Layout of the bouqing site",
-      stack: ["HTML", "CSS", "JavaScript"],
-    },
-    {
-      img: "/projects/7/1.png",
-      name: "React-ToDoLost-WinWinTravel-Testtask",
-      link: "https://github.com/vxdosick/wwt-technical-task-light-vxdosick.git",
-      description: "Test task - task manager.",
-      stack: ["React", "CSS", "TypeScript"],
+      img: "/projects/2/1.png",
+      name: "Tensorflow-React-AI-Color-Generator",
+      link: "https://github.com/vxdosick/Tensorflow-React-AI-Color-Generator.git",
+      description: "AI-based matching colour generator.",
+      stack: ["React", "TypeScript", "Scss", "TensoFlowJs"],
     },
   ];
 
@@ -263,6 +267,7 @@ function App() {
                     link={project.link}
                     description={project.description}
                     stack={project.stack}
+                    demo={project.demo}
                   />
                 );
               })}
@@ -400,7 +405,7 @@ function App() {
               vxdosick
             </a>
             <p>Strength in consistency</p>
-            <p>&copy; {new Date().getFullYear()}</p>
+            <p>&copy; {new Date().getFullYear() > 2025 ? "2025 - " : ""}{new Date().getFullYear()}</p>
           </div>
         </footer>
       </div>

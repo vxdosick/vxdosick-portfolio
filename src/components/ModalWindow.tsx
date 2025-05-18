@@ -1,5 +1,5 @@
 type Props = {
-  children: [string, string, string, string, string[]];
+  children: [string, string, string, string, string[], string | undefined];
   isOpen: boolean;
   onClose: () => void;
 };
@@ -66,7 +66,11 @@ export const ModalWindow = ({ children, isOpen, onClose }: Props) => {
                   return (
                     <li key={index} className="flex items-center gap-2">
                       {item && (
-                        <img className="h-8 w-8" src={renderImage(item)} alt="stack" />
+                        <img
+                          className="h-8 w-8"
+                          src={renderImage(item)}
+                          alt="stack"
+                        />
                       )}
                       <p>{item}</p>
                     </li>
@@ -77,9 +81,19 @@ export const ModalWindow = ({ children, isOpen, onClose }: Props) => {
           </div>
           <h2 className="text-2xl">{children[1]}</h2>
           <a href={children[2]} target="_blank">
-            GitHub
+            &rarr; GitHub
           </a>
-          <p>{children[3]}</p>
+          <div className="modal__description flex justify-between items-end gap-5">
+            <p>{children[3]}</p>
+            <a
+              href={children[5]}
+              target="_blank"
+              className="modal__demo button--general flex items-center gap-2"
+            >
+              <img className="h-6 w-6" src="/icons/demo.png" alt="Link" />
+              <p>Demo</p>
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -102,6 +102,9 @@ a:hover {
   background-color: white;
   color: black
 }
+.modal__demo {
+  text-decoration: none !important;
+}
 
 
 
@@ -135,7 +138,11 @@ a:hover {
     width: 100%;
   }
   .projects__image img {
-    margin: 15px auto;
+    /* margin: 15px auto; */
+    width: 100%;
+  }
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 700px) {
@@ -201,6 +208,15 @@ a:hover {
   }
 }
 @media (max-width: 450px) {
+  .modal__description {
+    flex-direction: column;
+    align-items: start;
+  }
+  .modal__description a {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+  }
   .modal__stack ul {
     grid-template-columns: repeat(2, 1fr);
     flex-wrap: wrap;
