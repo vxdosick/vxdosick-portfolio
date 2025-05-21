@@ -3,54 +3,65 @@ import { ProjectCard } from "./components/ProjectCard";
 function App() {
   const projects = [
     {
-      img: "/projects/1/1.png",
+      img: [
+        "/projects/1/1.png",
+        "/projects/1/2.png",
+        "/projects/1/3.png",
+        "/projects/1/4.png",
+      ],
       name: "React-QRCode-Scanner-and-Creator",
       link: "https://github.com/vxdosick/React-QRCode-Scanner-and-Creator.git",
       description:
         "Application for creating, scanning, saving, and working with qr codes.",
       stack: ["React", "TypeScript", "Tailwind"],
-      demo: "https://qrcode-ap9j.onrender.com"
+      demo: "https://qrcode-ap9j.onrender.com",
     },
     {
-      img: "/projects/3/1.png",
+      img: ["/projects/3/1.png", "/projects/3/2.png", "/projects/3/3.png"],
       name: "React-Tic-Tac-Toe",
       link: "https://github.com/vxdosick/React-Tic-Tac-Toe.git",
       description: "A game of tic-tac-toe with a friend.",
       stack: ["React", "JavaScript", "CSS"],
-      demo: "https://react-tic-tac-toe-ip25.onrender.com"
+      demo: "https://react-tic-tac-toe-ip25.onrender.com",
     },
     {
-      img: "/projects/7/1.png",
+      img: ["/projects/7/1.png", "/projects/7/2.png", "/projects/7/3.png"],
       name: "React-ToDoLost-WinWinTravel-Testtask",
       link: "https://github.com/vxdosick/wwt-technical-task-light-vxdosick.git",
       description: "Test task - task manager.",
       stack: ["React", "CSS", "TypeScript"],
     },
     {
-      img: "/projects/5/1.png",
+      img: ["/projects/5/1.png", "/projects/5/2.png", "/projects/5/3.png"],
       name: "Landing-Adsite-Testtask",
       link: "https://github.com/vxdosick/Landing-Adsite-Testtask.git",
       description: "Test assignment layout of a website for the sale of cars.",
       stack: ["HTML", "Tailwind", "JavaScript"],
-      demo: "https://vxdosick.github.io/Landing-Adsite-Testtask/"
+      demo: "https://vxdosick.github.io/Landing-Adsite-Testtask/",
     },
     {
-      img: "/projects/6/1.png",
+      img: [
+        "/projects/6/1.png",
+        "/projects/6/2.png",
+        "/projects/6/3.png",
+        "/projects/6/4.png",
+        "/projects/6/5.png",
+      ],
       name: "Landing-RealEstate",
       link: "https://github.com/vxdosick/HTML_CSS_JS_Landing_RealEstate.git",
       description: "Layout of the bouqing site",
       stack: ["HTML", "CSS", "JavaScript"],
-      demo: "https://vxdosick.github.io/Landing-RealEstate/"
+      demo: "https://vxdosick.github.io/Landing-RealEstate/",
     },
     {
-      img: "/projects/4/1.png",
+      img: ["/projects/4/1.png", "/projects/4/2.png"],
       name: "Next.js-AI-Landing-Builder",
       link: "https://github.com/vxdosick/Next.js-AI-Landing-Builder.git",
       description: "AI-based web page layout generator",
       stack: ["Next.js", "TypeScript", "Tailwind"],
     },
     {
-      img: "/projects/2/1.png",
+      img: ["/projects/2/1.png", "/projects/2/2.png"],
       name: "Tensorflow-React-AI-Color-Generator",
       link: "https://github.com/vxdosick/Tensorflow-React-AI-Color-Generator.git",
       description: "AI-based matching colour generator.",
@@ -153,19 +164,35 @@ function App() {
                   <p>CSS</p>
                 </li>
                 <li className="flex items-center gap-2">
-                  <img src="/tech/javascript.svg" className="w-8 h-8" alt="javascript" />
+                  <img
+                    src="/tech/javascript.svg"
+                    className="w-8 h-8"
+                    alt="javascript"
+                  />
                   <p>JavaScript</p>
                 </li>
                 <li className="flex items-center gap-2">
-                  <img src="/tech/typescript.svg" className="w-8 h-8" alt="typescript" />
+                  <img
+                    src="/tech/typescript.svg"
+                    className="w-8 h-8"
+                    alt="typescript"
+                  />
                   <p>TypeScript</p>
                 </li>
                 <li className="flex items-center gap-2">
-                  <img src="/tech/reactjs.svg" className="w-8 h-8" alt="reactjs" />
+                  <img
+                    src="/tech/reactjs.svg"
+                    className="w-8 h-8"
+                    alt="reactjs"
+                  />
                   <p>React.js</p>
                 </li>
                 <li className="flex items-center gap-2">
-                  <img src="/tech/nextjs.svg" className="w-8 h-8" alt="nextjs" />
+                  <img
+                    src="/tech/nextjs.svg"
+                    className="w-8 h-8"
+                    alt="nextjs"
+                  />
                   <p>Next.js</p>
                 </li>
                 <li className="flex items-center gap-2">
@@ -173,23 +200,43 @@ function App() {
                   <p>Scss</p>
                 </li>
                 <li className="flex items-center gap-2">
-                  <img src="/tech/tailwindcss.svg" className="w-8 h-8" alt="tailwindcss" />
+                  <img
+                    src="/tech/tailwindcss.svg"
+                    className="w-8 h-8"
+                    alt="tailwindcss"
+                  />
                   <p>TailwindCSS</p>
                 </li>
                 <li className="flex items-center gap-2">
-                  <img src="/tech/nodejs.svg" className="w-8 h-8" alt="nodejs" />
+                  <img
+                    src="/tech/nodejs.svg"
+                    className="w-8 h-8"
+                    alt="nodejs"
+                  />
                   <p>Node.js</p>
                 </li>
                 <li className="flex items-center gap-2">
-                  <img src="/tech/express.svg" className="w-8 h-8" alt="express" />
+                  <img
+                    src="/tech/express.svg"
+                    className="w-8 h-8"
+                    alt="express"
+                  />
                   <p>Express</p>
                 </li>
                 <li className="flex items-center gap-2">
-                  <img src="/tech/mongodb.svg" className="w-8 h-8" alt="mongodb" />
+                  <img
+                    src="/tech/mongodb.svg"
+                    className="w-8 h-8"
+                    alt="mongodb"
+                  />
                   <p>MongoDB</p>
                 </li>
                 <li className="flex items-center gap-2">
-                  <img src="/tech/docker.svg" className="w-8 h-8" alt="docker" />
+                  <img
+                    src="/tech/docker.svg"
+                    className="w-8 h-8"
+                    alt="docker"
+                  />
                   <p>Docker</p>
                 </li>
                 <li className="flex items-center gap-2">
@@ -197,7 +244,11 @@ function App() {
                   <p>Git</p>
                 </li>
                 <li className="flex items-center gap-2">
-                  <img src="/tech/tensorflowjs.svg" className="w-8 h-8" alt="tensorflowjs" />
+                  <img
+                    src="/tech/tensorflowjs.svg"
+                    className="w-8 h-8"
+                    alt="tensorflowjs"
+                  />
                   <p>TensorFlow.js</p>
                 </li>
               </ul>
@@ -405,7 +456,10 @@ function App() {
               vxdosick
             </a>
             <p>Strength in consistency</p>
-            <p>&copy; {new Date().getFullYear() > 2025 ? "2025 - " : ""}{new Date().getFullYear()}</p>
+            <p>
+              &copy; {new Date().getFullYear() > 2025 ? "2025 - " : ""}
+              {new Date().getFullYear()}
+            </p>
           </div>
         </footer>
       </div>

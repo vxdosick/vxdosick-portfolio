@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Pixelify+Sans:wght@400..700&display=swap');
 @import "tailwindcss";
 
+.slick-dots li.slick-active div {
+  background-color: rgb(130, 130, 130) !important;
+}
+
 body {
   font-family: "Pixelify Sans", sans-serif;
   background-color: rgb(19, 19, 19);
@@ -120,6 +124,9 @@ a:hover {
   }
 }
 @media (max-width: 1000px) {
+  .modal__slidercontainer {
+    width: 100%;
+  }
   .modal__hero {
     flex-direction: column;
     gap: 0;
@@ -132,13 +139,16 @@ a:hover {
 @media (max-width: 850px) {
   .modal__image {
     width: 540px;
-    height: 300px;
+    height: auto;
+  }
+  .modal__slider {
+    width: 540px;
+    height: auto;
   }
   .projects__image {
     width: 100%;
   }
   .projects__image img {
-    /* margin: 15px auto; */
     width: 100%;
   }
   .projects__grid {
@@ -147,7 +157,11 @@ a:hover {
 }
 @media (max-width: 700px) {
   .modal__image {
-    width: 100%;
+    width: 450px;
+    height: auto;
+  }
+  .modal__slider {
+    width: 450px;
     height: auto;
   }
   .modal__stack ul {
@@ -187,6 +201,14 @@ a:hover {
   }
 }
 @media (max-width: 550px) {
+  .modal__image {
+    width: 480px;
+    height: auto;
+  }
+  .modal__slider {
+    width: 280px;
+    height: auto;
+  }
   .projects__grid {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -239,8 +261,15 @@ a:hover {
   }
 }
 @media (max-width: 380px) {
+  .modal__image {
+    width: 240px;
+    height: auto;
+  }
+  .modal__slider {
+    width: 240px;
+    height: auto;
+  }
   .modal__stack ul {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-

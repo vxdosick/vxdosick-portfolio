@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ModalWindow } from "./ModalWindow";
 
 type Props = {
-  img: string;
+  img: string[];
   name: string;
   link: string;
   description: string;
@@ -31,7 +31,7 @@ export const ProjectCard = ({
     <li className="projects__item">
       <div className="projects__image">
         <img
-          src={img}
+          src={img[0]}
           alt="project-image"
           className="w-[360px] h-[202.5px] object-cover mb-2"
         />
