@@ -62,10 +62,23 @@ function App() {
     },
     {
       img: ["/projects/2/1.png", "/projects/2/2.png"],
-      name: "Tensorflow-React-AI-Color-Generator",
-      link: "https://github.com/vxdosick/Tensorflow-React-AI-Color-Generator.git",
+      name: "Node.js-Party-Manager",
+      link: "https://github.com/vxdosick/Node.js-Party-Manager.git",
       description: "AI-based matching colour generator.",
       stack: ["React", "TypeScript", "Scss", "TensoFlowJs"],
+    },
+    {
+      img: [
+        "/projects/8/1.png",
+        "/projects/8/2.png",
+        "/projects/8/3.png",
+        "/projects/8/4.png",
+        "/projects/8/5.png",
+      ],
+      name: "Tensorflow-React-AI-Color-Generator",
+      link: "https://github.com/vxdosick/Tensorflow-React-AI-Color-Generator.git",
+      description: "Event management application.",
+      stack: ["HTML", "CSS", "JavaScript", "Node.js", "Express"],
     },
   ];
 
@@ -138,173 +151,168 @@ function App() {
                   <li>
                     <a
                       className="cta__download"
-                      href="/files/Vadym Foteniuk.pdf"
-                      download={"Vadym Foteniuk CV.pdf"}
+                      href="/files/Vadym Foteniuk Frontend.pdf"
+                      download={"Vadym Foteniuk CV Frontend.pdf"}
                     >
-                      Download CV
+                      Download CV Frontend
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="cta__download"
+                      href="/files/Vadym Foteniuk FullStack.pdf"
+                      download={"Vadym Foteniuk CV FullStack.pdf"}
+                    >
+                      Download CV FullStack
                     </a>
                   </li>
                 </ul>
               </nav>
             </div>
           </section>
-          <div className="skill__container flex justify-between gap-5">
-            <section id="skills" className="skills mb-[50px] relative">
-              <p className="skills__decoration flex items-start absolute top-[-35px] text-white">
-                &darr;
-              </p>
-              <h2 className="title--general">Skills</h2>
-              <ul className="skills__list grid grid-cols-3 gap-x-7 gap-y-13">
-                <li className="flex items-center gap-2">
-                  <img className="w-8 h-8" src="/tech/html.svg" alt="html" />
-                  <p>HTML</p>
-                </li>
-                <li className="flex items-center gap-2">
-                  <img src="/tech/css.svg" className="w-8 h-8" alt="css" />
-                  <p>CSS</p>
-                </li>
-                <li className="flex items-center gap-2">
-                  <img
-                    src="/tech/javascript.svg"
-                    className="w-8 h-8"
-                    alt="javascript"
-                  />
-                  <p>JavaScript</p>
-                </li>
-                <li className="flex items-center gap-2">
-                  <img
-                    src="/tech/typescript.svg"
-                    className="w-8 h-8"
-                    alt="typescript"
-                  />
-                  <p>TypeScript</p>
-                </li>
-                <li className="flex items-center gap-2">
-                  <img
-                    src="/tech/reactjs.svg"
-                    className="w-8 h-8"
-                    alt="reactjs"
-                  />
-                  <p>React.js</p>
-                </li>
-                <li className="flex items-center gap-2">
-                  <img
-                    src="/tech/nextjs.svg"
-                    className="w-8 h-8"
-                    alt="nextjs"
-                  />
-                  <p>Next.js</p>
-                </li>
-                <li className="flex items-center gap-2">
-                  <img src="/tech/scss.svg" className="w-8 h-8" alt="scss" />
-                  <p>Scss</p>
-                </li>
-                <li className="flex items-center gap-2">
-                  <img
-                    src="/tech/tailwindcss.svg"
-                    className="w-8 h-8"
-                    alt="tailwindcss"
-                  />
-                  <p>TailwindCSS</p>
-                </li>
-                <li className="flex items-center gap-2">
-                  <img
-                    src="/tech/nodejs.svg"
-                    className="w-8 h-8"
-                    alt="nodejs"
-                  />
-                  <p>Node.js</p>
-                </li>
-                <li className="flex items-center gap-2">
-                  <img
-                    src="/tech/express.svg"
-                    className="w-8 h-8"
-                    alt="express"
-                  />
-                  <p>Express</p>
-                </li>
-                <li className="flex items-center gap-2">
-                  <img
-                    src="/tech/mongodb.svg"
-                    className="w-8 h-8"
-                    alt="mongodb"
-                  />
-                  <p>MongoDB</p>
-                </li>
-                <li className="flex items-center gap-2">
-                  <img
-                    src="/tech/docker.svg"
-                    className="w-8 h-8"
-                    alt="docker"
-                  />
-                  <p>Docker</p>
-                </li>
-                <li className="flex items-center gap-2">
-                  <img src="/tech/git.svg" className="w-8 h-8" alt="git" />
-                  <p>Git</p>
-                </li>
-                <li className="flex items-center gap-2">
-                  <img
-                    src="/tech/tensorflowjs.svg"
-                    className="w-8 h-8"
-                    alt="tensorflowjs"
-                  />
-                  <p>TensorFlow.js</p>
-                </li>
-              </ul>
-            </section>
-            <div>
-              <section id="languages" className="languages mb-[50px]">
-                <div className="languages__title flex items-start gap-2">
-                  <p className="skills__decoration">&rarr;</p>
-                  <h2 className="title--general">Languages</h2>
-                </div>
-                <ul className="flex flex-col gap-7">
-                  <li className="flex items-center gap-2">
+          <section id="skills" className="skills mb-[50px] relative">
+            <h2 className="title--general">Skills</h2>
+            <ul className="skills__list grid grid-cols-3 gap-x-7 gap-y-13">
+              <li className="flex items-center gap-2">
+                <img className="w-8 h-8" src="/tech/html.svg" alt="html" />
+                <p>HTML</p>
+              </li>
+              <li className="flex items-center gap-2">
+                <img src="/tech/css.svg" className="w-8 h-8" alt="css" />
+                <p>CSS</p>
+              </li>
+              <li className="flex items-center gap-2">
+                <img
+                  src="/tech/javascript.svg"
+                  className="w-8 h-8"
+                  alt="javascript"
+                />
+                <p>JavaScript</p>
+              </li>
+              <li className="flex items-center gap-2">
+                <img
+                  src="/tech/typescript.svg"
+                  className="w-8 h-8"
+                  alt="typescript"
+                />
+                <p>TypeScript</p>
+              </li>
+              <li className="flex items-center gap-2">
+                <img
+                  src="/tech/reactjs.svg"
+                  className="w-8 h-8"
+                  alt="reactjs"
+                />
+                <p>React.js</p>
+              </li>
+              <li className="flex items-center gap-2">
+                <img src="/tech/nextjs.svg" className="w-8 h-8" alt="nextjs" />
+                <p>Next.js</p>
+              </li>
+              <li className="flex items-center gap-2">
+                <img src="/tech/scss.svg" className="w-8 h-8" alt="scss" />
+                <p>Scss</p>
+              </li>
+              <li className="flex items-center gap-2">
+                <img
+                  src="/tech/tailwindcss.svg"
+                  className="w-8 h-8"
+                  alt="tailwindcss"
+                />
+                <p>TailwindCSS</p>
+              </li>
+              <li className="flex items-center gap-2">
+                <img src="/tech/nodejs.svg" className="w-8 h-8" alt="nodejs" />
+                <p>Node.js</p>
+              </li>
+              <li className="flex items-center gap-2">
+                <img
+                  src="/tech/express.svg"
+                  className="w-8 h-8"
+                  alt="express"
+                />
+                <p>Express</p>
+              </li>
+              <li className="flex items-center gap-2">
+                <img
+                  src="/tech/mongodb.svg"
+                  className="w-8 h-8"
+                  alt="mongodb"
+                />
+                <p>MongoDB</p>
+              </li>
+              <li className="flex items-center gap-2">
+                <img src="/tech/docker.svg" className="w-8 h-8" alt="docker" />
+                <p>Docker</p>
+              </li>
+              <li className="flex items-center gap-2">
+                <img src="/tech/git.svg" className="w-8 h-8" alt="git" />
+                <p>Git</p>
+              </li>
+              <li className="flex items-center gap-2">
+                <img
+                  src="/tech/tensorflowjs.svg"
+                  className="w-8 h-8"
+                  alt="tensorflowjs"
+                />
+                <p>TensorFlow.js</p>
+              </li>
+            </ul>
+          </section>
+          <div>
+            <section id="languages" className="languages mb-[50px]">
+              <div className="languages__title flex items-start gap-2">
+                <h2 className="title--general">Languages</h2>
+              </div>
+              <ul className="languages__list gap-7">
+                <li className="flex flex-col gap-2">
+                  <div className="flex items-center gap-2">
                     <img
                       className="w-8 h-8"
                       src="/icons/planet.png"
                       alt="english"
                     />
-                    <p>English: B1 – Intermediate (working on B2)</p>
-                  </li>
-                  <li className="flex items-center gap-2">
+                    <p>English: B1</p>
+                  </div>
+                  <p>Intermediate (working on B2)</p>
+                </li>
+                <li className="flex flex-col gap-2">
+                  <div className="flex items-center gap-2">
                     <img
                       className="w-8 h-8"
                       src="/icons/poland.png"
                       alt="polish"
                     />
-                    <p>Polish: B2 – Upper-Intermediate</p>
-                  </li>
-                  <li className="flex items-center gap-2">
+                    <p>Polish: B2</p>
+                  </div>
+                  <p>Upper-Intermediate</p>
+                </li>
+                <li className="flex flex-col gap-2">
+                  <div className="flex items-center gap-2">
                     <img
                       className="w-8 h-8"
                       src="/icons/ukraine.png"
                       alt="ukrainian"
                     />
-                    <p>Ukrainian: native</p>
-                  </li>
-                </ul>
-              </section>
-              <p className="skills__decoration flex justify-start mb-[10px] text-white">
-                &darr;
-              </p>
-              <section className="education mb-[50px]">
-                <h2 className="title--general">Education</h2>
-                <div className="flex items-center gap-2 mb-3">
-                  <img src="/icons/aeh.png" className="w-8" alt="AEH" />
-                  <a href="https://vizja.pl/en/">
-                    University of Economics and Human Sciences in Warsaw
-                  </a>
-                </div>
-                <div>
-                  <p>
-                    Informatics Sciences (Web-development, AI and Data Science)
-                  </p>
-                  <p>2022 - 2026</p>
-                </div>
-              </section>
-            </div>
+                    <p>Ukrainian: C1</p>
+                  </div>
+                  <p>Native</p>
+                </li>
+              </ul>
+            </section>
+            <section className="education mb-[50px]">
+              <h2 className="title--general">Education</h2>
+              <div className="flex items-center gap-2 mb-3">
+                <img src="/icons/aeh.png" className="w-8" alt="AEH" />
+                <a href="https://vizja.pl/en/">VIZJA University in Warsaw</a>
+              </div>
+              <div>
+                <p>
+                  Informatics Sciences (Web-development, AI and Data Science)
+                </p>
+                <p>2022 - 2026</p>
+              </div>
+            </section>
           </div>
           <section id="projects" className="projects mb-[50px]">
             <h2 className="title--general">Projects</h2>

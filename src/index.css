@@ -109,16 +109,16 @@ a:hover {
 .modal__demo {
   text-decoration: none !important;
 }
-
+.languages__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
 
 
 
 
 @media (max-width: 1110px) {
-  .skills__list {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .modal__stack ul {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -201,6 +201,13 @@ a:hover {
   }
 }
 @media (max-width: 550px) {
+  .languages__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .languages__list li {
+    align-items: center;
+    text-align: center;
+  }
   .modal__image {
     width: 480px;
     height: auto;
@@ -230,6 +237,14 @@ a:hover {
   }
 }
 @media (max-width: 450px) {
+  .cta__buttons {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .cta__decoration {
+    display: none;
+  }
   .modal__description {
     flex-direction: column;
     align-items: start;
