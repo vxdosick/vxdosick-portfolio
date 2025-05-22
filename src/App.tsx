@@ -4,6 +4,19 @@ function App() {
   const projects = [
     {
       img: [
+        "/projects/9/1.png",
+        "/projects/9/2.png",
+        "/projects/9/3.png",
+      ],
+      name: "Node.js-Resume-Scan-AI",
+      link: "https://github.com/vxdosick/Node.js-Resume-Scan-AI.git",
+      description:
+        "An app for scanning resumes using AI.",
+      stack: ["HTML", "CSS", "JavaScript", "Node.js", "Express"],
+      demo: "https://node-js-resume-scan-ai.onrender.com/",
+    },
+    {
+      img: [
         "/projects/1/1.png",
         "/projects/1/2.png",
         "/projects/1/3.png",
@@ -458,16 +471,30 @@ function App() {
             </nav>
           </section>
         </main>
-        <footer className="py-3.5 border-t border-gray-600">
+        <footer className="py-3.5 border-t relative border-gray-600">
           <div className="flex flex-col items-center">
             <a className="logo" href="/">
               vxdosick
             </a>
             <p>Strength in consistency</p>
-            <p>
-              &copy; {new Date().getFullYear() > 2025 ? "2025 - " : ""}
-              {new Date().getFullYear()}
-            </p>
+            <div className="flex items-center gap-5 mt-2">
+              <a
+                className="footer__donate inline-flex gap-2 items-center absolute left-5 top-1/2 transform -translate-y-1/2"
+                href="https://buymeacoffee.com/vxdosick"
+                target="_blank"
+              >
+                <img
+                  className="w-8"
+                  src="/icons/coffee.png"
+                  alt="buymeacoffee"
+                />
+                <span>Support the project</span>
+              </a>
+              <p>
+                &copy; {new Date().getFullYear() > 2025 ? "2025 - " : ""}
+                {new Date().getFullYear()}
+              </p>
+            </div>
           </div>
         </footer>
       </div>

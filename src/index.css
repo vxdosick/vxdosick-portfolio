@@ -155,6 +155,11 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (max-width: 800px) {
+  .footer__donate span {
+    display: none;
+  }
+}
 @media (max-width: 700px) {
   .modal__image {
     width: 450px;
@@ -237,6 +242,10 @@ a:hover {
   }
 }
 @media (max-width: 450px) {
+  .footer__donate {
+    position: static;
+   transform: translateY(50%);
+  }
   .cta__buttons {
     flex-direction: column;
     gap: 20px;
